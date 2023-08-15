@@ -1,0 +1,31 @@
+<div class="container">
+  <!-- Login & Logout Buttons -->
+  <div class="actions">
+    <button (click)="login()">Login</button>
+    <button (click)="loadUserProfile()">Load User Profile</button>
+    <button (click)="logout()">Logout</button>
+  </div>
+
+<!-- User Profile Display -->
+<div *ngIf="userProfile$ | async as userProfile; else noProfile">
+  <h2>User Profile</h2>
+  <pre>{{ userProfile | json }}</pre>
+</div>
+
+<ng-template #noProfile>
+  <div *ngIf="hasAttemptedToLoadProfile; else initialMessage">
+      <p>No user profile available. Please log in.</p>
+  </div>
+  <ng-template #initialMessage>
+      <p>On desktop browser click "Load User Profile" to fetch your details.</p>
+  </ng-template>
+</ng-template>
+
+
+  <!-- Message if user profile is not available -->
+  <div *ngIf="(userProfile$ | async) === null">
+    <p>No user profile available. Please log in.</p>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

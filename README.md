@@ -15,7 +15,7 @@
 ## Installation
 
 ```sh
-npm install --save keycloak-js @capacitor/app @capacitor/browser @capacitor/core @edgeflare/keycloak-angular-capacitor
+npm install --save keycloak-js @edgeflare/keycloak-angular-capacitor @capacitor/app @capacitor/browser @capacitor/core
 ```
 
 ## Setup
@@ -101,8 +101,7 @@ export class AppComponent {
   }
 
   loadUserProfile() {
-    this.hasAttemptedToLoadProfile = true;
     return this.kc.loadUserProfile();
   }
-
+}
 ```
