@@ -1,9 +1,14 @@
 {
   "name": "@edgeflare/ngx-oidc-capacitor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "peerDependencies": {
     "@angular/common": ">=17.0.0",
-    "@angular/core": ">=17.0.0"
+    "@angular/core": ">=17.0.0",
+    "@angular/router": ">=17.0.0",
+    "@capacitor/browser": ">=6.0.0",
+    "@capacitor/core": ">=6.0.0",
+    "@edgeflare/ngx-oidc": "^0.0.2",
+    "oidc-client-ts": "^3.0.0"
   },
   "dependencies": {
     "tslib": "^2.3.0"

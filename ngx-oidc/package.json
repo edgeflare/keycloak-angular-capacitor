@@ -1,9 +1,11 @@
 {
   "name": "@edgeflare/ngx-oidc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": ">=17.0.0",
-    "@angular/core": ">=17.0.0"
+    "@angular/core": ">=17.0.0",
+    "@angular/router": ">=17.0.0",
+    "oidc-client-ts": "^3.0.0"    
   },
   "dependencies": {
     "tslib": "^2.3.0"

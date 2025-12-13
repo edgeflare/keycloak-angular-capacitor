@@ -1,6 +1,6 @@
 services:
   db-postgresql:
-    image: docker.io/bitnami/postgresql:17.4.0
+    image: docker.io/bitnami/postgresql:latest
     environment:
       POSTGRES_HOST_AUTH_METHOD: scram-sha-256
       POSTGRES_USER: postgres

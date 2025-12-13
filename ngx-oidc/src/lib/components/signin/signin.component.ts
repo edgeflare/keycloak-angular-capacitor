@@ -1,12 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { AuthService } from '../../auth';
 import { Router, RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'ng-signin',
   standalone: true,
-  imports: [RouterModule, CommonModule],
+  imports: [RouterModule],
   templateUrl: './signin.component.html',
   styleUrls: ['./signin.component.scss'],
 })

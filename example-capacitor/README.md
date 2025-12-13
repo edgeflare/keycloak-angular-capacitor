@@ -73,5 +73,5 @@ npx cap sync
 
 ```sh
 npx cap run ios
-npx can run android
+npx cap run android
 ```
